@@ -25,7 +25,7 @@ module CarrierWave
 
       def signer
         @signer ||= begin
-          ::Azure::Storage::Core::Auth::SharedAccessSignature.new
+          ::Azure::Storage::Common::Core::Auth::SharedAccessSignature.new
         end
       end
 
